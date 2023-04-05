@@ -1,0 +1,103 @@
+929  [main] INFO  c.e.J.JavaTask19Application – Starting JavaTask19Application using Java 18.0.2.1 with PID 37200 (C:\Users\Forex\IdeaProjects\Java_mires_spring\Java_task19\target\classes started by Влад in C:\Users\Forex\IdeaProjects\Java_mires_spring\Java_task19)
+938  [main] INFO  c.e.J.JavaTask19Application – No active profile set, falling back to 1 default profile: "default"
+2180 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2264 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate – Finished Spring Data repository scanning in 74 ms. Found 3 JPA repository interfaces.
+3010 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat initialized with port(s): 8080 (http)
+3022 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Initializing ProtocolHandler ["http-nio-8080"]
+3022 [main] INFO  o.a.catalina.core.StandardService – Starting service [Tomcat]
+3023 [main] INFO  o.a.catalina.core.StandardEngine – Starting Servlet engine: [Apache Tomcat/10.1.5]
+3231 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring embedded WebApplicationContext
+3231 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext – Root WebApplicationContext: initialization completed in 2240 ms
+3560 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Starting...
+3978 [main] INFO  com.zaxxer.hikari.pool.HikariPool – HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@66234b0f
+3980 [main] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Start completed.
+4040 [main] INFO  o.h.jpa.internal.util.LogHelper – HHH000204: Processing PersistenceUnitInfo [name: default]
+4132 [main] INFO  org.hibernate.Version – HHH000412: Hibernate ORM core version 6.1.7.Final
+4633 [main] INFO  SQL dialect – HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+5553 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator – HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+5562 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Initialized JPA EntityManagerFactory for persistence unit 'default'
+6192 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration – spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+6755 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver – Exposing 1 endpoint(s) beneath base path '/actuator'
+6860 [main] INFO  o.s.s.w.DefaultSecurityFilterChain – Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58c93be3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5dd62f07, org.springframework.security.web.context.SecurityContextHolderFilter@2e845f1c, org.springframework.security.web.header.HeaderWriterFilter@62fa4a88, org.springframework.security.web.authentication.logout.LogoutFilter@1f7853af, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2fb555e8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1f67d37f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f0751b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e669b5c, org.springframework.security.web.access.ExceptionTranslationFilter@15e748b5, org.springframework.security.web.access.intercept.AuthorizationFilter@4a985388]
+7195 [main] INFO  o.a.coyote.http11.Http11NioProtocol – Starting ProtocolHandler ["http-nio-8080"]
+7218 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer – Tomcat started on port(s): 8080 (http) with context path ''
+7237 [main] INFO  c.e.J.JavaTask19Application – Started JavaTask19Application in 6.756 seconds (process running for 8.327)
+7467 [RMI TCP Connection(1)-172.17.130.235] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] – Initializing Spring DispatcherServlet 'dispatcherServlet'
+7467 [RMI TCP Connection(1)-172.17.130.235] INFO  o.s.web.servlet.DispatcherServlet – Initializing Servlet 'dispatcherServlet'
+7469 [RMI TCP Connection(1)-172.17.130.235] INFO  o.s.web.servlet.DispatcherServlet – Completed initialization in 2 ms
+7513 [RMI TCP Connection(3)-172.17.130.235] WARN  o.s.b.a.mail.MailHealthIndicator – Mail health check failed
+com.sun.mail.util.MailConnectException: Couldn't connect to host, port: smtp.gmail.com, 587; timeout -1
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2259)
+	at com.sun.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:754)
+	at jakarta.mail.Service.connect(Service.java:342)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:518)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.testConnection(JavaMailSenderImpl.java:398)
+	at org.springframework.boot.actuate.mail.MailHealthIndicator.doHealthCheck(MailHealthIndicator.java:42)
+	at org.springframework.boot.actuate.health.AbstractHealthIndicator.health(AbstractHealthIndicator.java:82)
+	at org.springframework.boot.actuate.health.HealthIndicator.getHealth(HealthIndicator.java:37)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:82)
+	at org.springframework.boot.actuate.health.HealthEndpoint.getHealth(HealthEndpoint.java:41)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getLoggedHealth(HealthEndpointSupport.java:172)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:145)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getAggregateContribution(HealthEndpointSupport.java:156)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getContribution(HealthEndpointSupport.java:141)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:110)
+	at org.springframework.boot.actuate.health.HealthEndpointSupport.getHealth(HealthEndpointSupport.java:81)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:76)
+	at org.springframework.boot.actuate.health.HealthEndpoint.health(HealthEndpoint.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+	at org.springframework.boot.actuate.endpoint.invoke.reflect.ReflectiveOperationInvoker.invoke(ReflectiveOperationInvoker.java:74)
+	at org.springframework.boot.actuate.endpoint.annotation.AbstractDiscoveredOperation.invoke(AbstractDiscoveredOperation.java:60)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:124)
+	at org.springframework.boot.actuate.endpoint.jmx.EndpointMBean.invoke(EndpointMBean.java:97)
+	at java.management/com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.invoke(DefaultMBeanServerInterceptor.java:811)
+	at java.management/com.sun.jmx.mbeanserver.JmxMBeanServer.invoke(JmxMBeanServer.java:802)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doOperation(RMIConnectionImpl.java:1472)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl$PrivilegedOperation.run(RMIConnectionImpl.java:1310)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.doPrivilegedOperation(RMIConnectionImpl.java:1405)
+	at java.management.rmi/javax.management.remote.rmi.RMIConnectionImpl.invoke(RMIConnectionImpl.java:829)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at java.rmi/sun.rmi.server.UnicastServerRef.dispatch(UnicastServerRef.java:360)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:200)
+	at java.rmi/sun.rmi.transport.Transport$1.run(Transport.java:197)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:712)
+	at java.rmi/sun.rmi.transport.Transport.serviceCall(Transport.java:196)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport.handleMessages(TCPTransport.java:598)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run0(TCPTransport.java:844)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.lambda$run$0(TCPTransport.java:721)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:399)
+	at java.rmi/sun.rmi.transport.tcp.TCPTransport$ConnectionHandler.run(TCPTransport.java:720)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.net.UnknownHostException: smtp.gmail.com
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:564)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/java.net.Socket.connect(Socket.java:583)
+	at com.sun.mail.util.SocketFetcher.createSocket(SocketFetcher.java:357)
+	at com.sun.mail.util.SocketFetcher.getSocket(SocketFetcher.java:236)
+	at com.sun.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2209)
+	... 45 common frames omitted
+18655 [http-nio-8080-exec-2] INFO  c.e.J.services.WorkerService – Find all workers
+18733 [http-nio-8080-exec-2] INFO  c.example.Java_task19.utils.Aspect – Method List com.example.Java_task19.services.WorkerService.findAll() worked 78 ms
+43412 [http-nio-8080-exec-6] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver – Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+146173 [RMI TCP Connection(7)-172.17.130.235] INFO  c.e.J.services.ManufactureService – Find all manufactures
+146179 [RMI TCP Connection(7)-172.17.130.235] INFO  c.example.Java_task19.utils.Aspect – Method List com.example.Java_task19.services.ManufactureService.findAll() worked 6 ms
+146194 [RMI TCP Connection(7)-172.17.130.235] INFO  c.e.J.services.WorkerService – Find all workers
+146198 [RMI TCP Connection(7)-172.17.130.235] INFO  c.example.Java_task19.utils.Aspect – Method List com.example.Java_task19.services.WorkerService.findAll() worked 4 ms
+146210 [RMI TCP Connection(7)-172.17.130.235] INFO  c.example.Java_task19.utils.Aspect – Method void com.example.Java_task19.services.ScheduledService.scheduledTask() worked 38 ms
+207614 [http-nio-8080-exec-1] INFO  c.e.J.services.WorkerService – Find all workers
+207622 [http-nio-8080-exec-1] INFO  c.example.Java_task19.utils.Aspect – Method List com.example.Java_task19.services.WorkerService.findAll() worked 8 ms
+274019 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean – Closing JPA EntityManagerFactory for persistence unit 'default'
+274021 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown initiated...
+274030 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource – HikariPool-1 - Shutdown completed.
+176  [main] INFO  c.e.J.services.WorkerService – Find all workers
+182  [main] INFO  c.e.J.services.WorkerService – Find all workers
+196  [main] INFO  c.e.J.services.WorkerService – Save worker Worker(id=0, firstName=Test, middleName=null, lastName=null, manufacture=null)
+176  [main] INFO  c.e.J.services.ManufactureService – Find all manufactures
+183  [main] INFO  c.e.J.services.ManufactureService – Find all manufactures
+193  [main] INFO  c.e.J.services.ManufactureService – Save manufacture Manufacture(id=0, name=Test 1, address=null, workerList=null)
